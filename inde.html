@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gli animali</title>
+    <style>
+        body {
+            position: relative;
+            background: #833AB4;
+            background: linear-gradient(45deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 25%, rgba(252, 176, 69, 1) 50%, rgba(145, 252, 69, 1) 75%, rgba(69, 215, 252, 1) 100%);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(100, 153, 2);
+            background: radial-gradient(circle, rgba(255, 122, 180, 1) 0%, rgba(219, 125, 174, 1) 20%, rgba(101, 102, 186, 1) 78%, rgba(148, 187, 233, 1) 100%);
+            font-size: 500%;
+            margin: 0%;
+            margin-bottom: 1%;
+        }
+
+        #la_tavola {
+            border-collapse: collapse;
+            width: 100%;
+            height: auto;
+            background: #833AB4;
+            background: linear-gradient(129deg, rgba(131, 58, 180, 1) 0%, rgba(80, 138, 131, 1) 25%, rgba(187, 78, 242, 1) 50%, rgba(91, 166, 157, 1) 75%, rgba(252, 176, 69, 1) 100%);
+
+        }
+
+        .la_tavola {
+            font-size: 30px;
+            background: #EEAECA;
+            background: linear-gradient(90deg, rgba(238, 174, 202, 1) 0%, rgba(255, 135, 135, 1) 20%, rgba(120, 255, 248, 1) 30%, rgba(133, 255, 241, 1) 73%, rgba(255, 125, 125, 1) 81%, rgba(148, 187, 233, 1) 100%);
+            background-clip: text;
+            color: transparent;
+        }
+
+        #primaRiga {
+            display: flex;
+            padding: 20px;
+            justify-content: left;
+        }
+
+        .primaRiga {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #ilTucano {
+            padding: 20px;
+            padding-right: 340px;
+            height: 330px;
+            display: flex;
+        }
+
+        #ilLeopardo{
+            padding: 20px;
+            height: 330px;
+            display: flex;
+        }
+
+        .aLibera {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        #boxTucano {
+            background-image: url('tucano.jpg');
+        }
+
+        #boxLeopardo {
+            background-image: url('leopardo.jpg');
+        }
+
+        .box {
+            width: 230px;
+            height: 300px;
+            margin-top: 40px;
+            border-radius: 50%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>4 animali</h1>
+
+    <table id="la_tavola">
+        <tr>
+            <th class="la_tavola" style="width: 25%;">importante</th>
+            <th class="la_tavola" style="width: 50%;">elenco</th>
+            <th class="la_tavola" style="width: 25%;">opzioni</th>
+        </tr>
+    </table>
+
+    <div id="primaRiga">
+        <div id="ilTucano" class="primaRiga">
+            <div class="box" id="boxTucano"></div>
+            <div>
+                <h2 style="padding-left: 30px">
+                    <em>Il Tucano</em>
+                </h2>
+                <h2 style="padding-left: 10px;
+            margin-top: 40px;">
+                    <a target="_blank" class="aLibera" href="audio.mp3">Sa volare</a>
+                </h2>
+                <h2 style="padding-left: 33px;
+            margin-top: 60px;">
+                    <a target="_blank" href="https://www.treccani.it/vocabolario/mangiare/" class="aLibera">Mangia</a>
+                </h2>
+                <h2 style="padding-left: 10px;
+            margin-top: 60px;">
+                    <a target="_blank" href="https://www.treccani.it/vocabolario/dormire/" class="aLibera">E dorme</a>
+                </h2>
+            </div>
+        </div>
+
+
+
+
+        <div id="ilLeopardo" class="primaRiga">
+            <div class="box" id="boxLeopardo" style=" background-position: 45% center;"></div>
+            <div>
+                <h2 style="padding-left: 30px">
+                    <em>Il Leopardo</em>
+                </h2>
+                    <h2 style="padding-left: 10px;
+            margin-top: 40px;">
+                        <a target="_blank" class="aLibera" href="">Zampetta in giro</a>
+                    </h2>
+                    <h2 style="padding-left: 33px;
+            margin-top: 60px;">
+                        <a target="_blank" href="" class="aLibera">È veloce</a>
+                    </h2>
+                    <h2 style="padding-left: 10px;
+            margin-top: 60px;">
+                        <a target="_blank" href="" class="aLibera">Ed ha molta fame</a>
+                    </h2>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer style="text-align: right;">
+        <small>© 2025 Tommaso Modanese. Tutti i diritti riservati.</small>
+    </footer>
+</body>
+
+</html>
